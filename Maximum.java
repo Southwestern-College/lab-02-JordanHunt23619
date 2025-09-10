@@ -32,16 +32,39 @@ public class Maximum {
         int max;
 
         // if else statements to find maximum
-        // if num1 is larger than num2 & num3 print out num1
+        // if num1 is larger than num2, check if num1 is also larger then num3
         if (num1 >= num2)
+            // check if also larger than num3
             if (num1 >= num3)
+                // if so, num1 is max
                 max = num1;
+            // if not, num3 is largest
             else
                 max = num3;
-        if (num2 >= num3)
-            System.out.println("The maximum is " + num2);
+            // if num2 is larger than num1, check against num3
+            if (num2 >= num3)
+            // if larger, then num2 is max
+            max = num2;
+        // if not, num3 is max
         else 
-        System.out.println("The maximum is " + num3);
+            max = num3;
+
+3    // check if also larger than num3
+            if (num1 >= num3)
+                // if so, num1 is max
+                max = num1;
+            // if not, num3 is largest
+            else
+                max = num3;
+            // if num2 is larger than num1, check against num3
+            if (num2 >= num3)
+            // if larger, then num2 is max
+            max = num2;
+        // if not, num3 is max
+        else 
+            max = num3;
+
+        System.out.println("The maximum is " + max);
 
         // if num2 is larger than num3 & num1 print out num1
         // if (num2 >= num3)
