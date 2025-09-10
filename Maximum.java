@@ -29,6 +29,7 @@ public class Maximum {
         System.out.print("Enter the 3rd integer: ");
         int num3 = input.nextInt();
 
+        // declare max variable
         int max;
 
         // if else statements to find maximum
@@ -38,18 +39,19 @@ public class Maximum {
             if (num1 >= num3)
                 // if so, num1 is max
                 max = num1;
-            // if not, num3 is largest
+            // if not, num3 is max
             else
                 max = num3;
         // if num2 is larger than num1, check against num3
          else 
-         if (num2 >= num3)
+            if (num2 >= num3)
             // if larger, then num2 is max
             max = num2;
-        // if not, num3 is max
-        else 
-            max = num3;
-
+            // if not, num3 is max
+             else 
+                 max = num3;
+            
+        // print out the maximum
         System.out.println("The maximum is " + max);
 
     }
