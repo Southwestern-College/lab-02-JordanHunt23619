@@ -41,8 +41,9 @@ public class Maximum {
             // if not, num3 is largest
             else
                 max = num3;
-            // if num2 is larger than num1, check against num3
-             if (num2 >= num3)
+        // if num2 is larger than num1, check against num3
+         else 
+         if (num2 >= num3)
             // if larger, then num2 is max
             max = num2;
         // if not, num3 is max
