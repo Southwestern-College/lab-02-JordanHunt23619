@@ -54,5 +54,7 @@ public class Maximum {
         // print out the maximum
         System.out.println("The maximum is " + max);
 
+        input.close();
+
     }
 }
