@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-/*
- * Jordan Hunt
- * Math 130
+/**
  * This program decides the maximum 
- * value that the user inputs
- * 
+ * value of the 3 values that the user inputs
+ * @author Jordan Hunt
+ * Math 130
  */
 
 public class Maximum {
@@ -43,18 +42,19 @@ public class Maximum {
             else
                 max = num3;
         // if num2 is larger than num1, check against num3
-         else 
-            if (num2 >= num3)
+        else if (num2 >= num3)
             // if larger, then num2 is max
             max = num2;
-            // if not, num3 is max
-             else 
-                 max = num3;
-            
+        // if not, num3 is max
+        else
+            max = num3;
+
         // print out the maximum
         System.out.println("The maximum is " + max);
 
+        // close Scanner
         input.close();
+
 
     }
 }
